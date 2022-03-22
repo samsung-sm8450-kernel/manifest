@@ -11,19 +11,17 @@
 
   <default upstream="master-kernel-build-2021" dest-branch="master-kernel-build-2021" remote="aosp" sync-j="4" />
 
+  <project name="external_dtc" path="kernel_platform/external/dtc" remote="github"/>
   <project name="kernel_build" path="kernel_platform/build" remote="github"/>
-  
-  <!-- <project groups="qki" name="kernel/common" path="kernel_platform/common" revision="44550a1c5019f8425eb11867edc7fa4c4b5a46c7" upstream="refs/heads/ks-kernel.lnx.1.0.r1-rel"/> -->
-
-  <!-- <project name="kernel/msm-5.10" path="kernel_platform/msm-kernel" revision="82d4dc318853eedd9b94edbb0e879f99c78720ab" upstream="refs/heads/kernel.lnx.5.10.r1-rel">
+  <project name="kernel_common" path="kernel_platform/common" remote="github"/>
+  <project name="kernel_msm-5.10" path="kernel_platform/msm-kernel" remote="github">
     <linkfile dest="kernel_platform/common/build.config.msm.waipio" src="build.config.msm.waipio"/>
     <linkfile dest="kernel_platform/common/build.config.msm.waipio.tuivm" src="build.config.msm.waipio.tuivm"/>
     <linkfile dest="kernel_platform/common/build.config.msm.lahaina" src="build.config.msm.lahaina"/>
-  </project> -->
-
-  <project name="external_dtc" path="kernel_platform/external/dtc" remote="github"/>
+  </project>
   <project name="proprietary_qcom_devicetree" path="kernel_platform/qcom/proprietary" remote="github"/>
 
+  <!-- From Google -->
   <project path="kernel_platform/tools/mkbootimg" name="platform/system/tools/mkbootimg" />
   <project path="kernel_platform/prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" />
   <project path="kernel_platform/prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" />
