@@ -24,6 +24,7 @@
   <!-- From Google -->
   <project path="kernel_platform/tools/mkbootimg" name="platform/system/tools/mkbootimg" />
   <project path="kernel_platform/prebuilts/build-tools" name="platform/prebuilts/build-tools" clone-depth="1" />
-  <project path="kernel_platform/prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" />
+  <project path="kernel_platform/prebuilts/gas/linux-x86" name="platform/prebuilts/gas/linux-x86" />
   <project path="kernel_platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" clone-depth="1"/>
+  <project path="kernel_platform/prebuilts-master/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" clone-depth="1" />
 </manifest>
