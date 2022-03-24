@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://github.com/samsung-sm8450" 
+  <remote fetch="https://github.com/samsung-sm8450-kernel" 
           name="github"
           revision="refs/heads/lineage-19.1"/>
 
@@ -9,12 +9,12 @@
            review="android-review.googlesource.com"
            revision="master-kernel-build-2021"/>
 
-  <default upstream="master-kernel-build-2021" dest-branch="master-kernel-build-2021" remote="aosp" sync-j="4" />
+  <default upstream="master-kernel-build-2021" dest-branch="master-kernel-build-2021" remote="aosp" sync-j="8" />
 
   <project name="external_dtc" path="kernel_platform/external/dtc" remote="github"/>
   <project name="kernel_build" path="kernel_platform/build" remote="github"/>
   <project name="kernel_common" path="kernel_platform/common" remote="github"/>
-  <project name="kernel_msm-5.10" path="kernel_platform/msm-kernel" remote="github">
+  <project name="kernel_msm" path="kernel_platform/msm-kernel" remote="github">
     <linkfile dest="kernel_platform/common/build.config.msm.waipio" src="build.config.msm.waipio"/>
     <linkfile dest="kernel_platform/common/build.config.msm.waipio.tuivm" src="build.config.msm.waipio.tuivm"/>
     <linkfile dest="kernel_platform/common/build.config.msm.lahaina" src="build.config.msm.lahaina"/>
