@@ -21,6 +21,7 @@
   </project>
   <project name="proprietary_qcom_devicetree" path="kernel_platform/qcom/proprietary" remote="github"/>
   <project name="platform_prebuilts_kernel-build-tools" path="kernel_platform/prebuilts/kernel-build-tools" remote="github"/>
+  <project name="vendor_qcom_opensource" path="vendor/qcom/opensource" remote="github"/>
 
   <!-- From Google -->
   <project path="kernel_platform/tools/mkbootimg" name="platform/system/tools/mkbootimg" />
