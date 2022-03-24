@@ -19,6 +19,10 @@
     <linkfile dest="kernel_platform/common/build.config.msm.waipio.tuivm" src="build.config.msm.waipio.tuivm"/>
     <linkfile dest="kernel_platform/common/build.config.msm.lahaina" src="build.config.msm.lahaina"/>
   </project>
+  <project name="manifest" remote="github">
+    <linkfile dest="build.config" src="build.config"/>
+    <linkfile dest="build_kernel_GKI.sh" src="build_kernel_GKI.sh"/>
+  </project>
   <project name="proprietary_qcom_devicetree" path="kernel_platform/qcom/proprietary" remote="github"/>
   <project name="platform_prebuilts_kernel-build-tools" path="kernel_platform/prebuilts/kernel-build-tools" remote="github"/>
   <project name="vendor_qcom_opensource" path="vendor/qcom/opensource" remote="github"/>
